@@ -1,0 +1,10 @@
+[
+    {
+    "Name": "MACD",
+    "Fast Length": 12,
+    "Slow Length": 26,
+    "Signal Smoothing": 9,
+    "Source": "Close"
+
+    }
+]

@@ -1,0 +1,6 @@
+[
+  { "Name": "EMA9", "Length": 9, "Source": "Close", "Type": "EMA", "Color": "#ff9800" },
+  { "Name": "EMA21", "Length": 21, "Source": "Close", "Type": "EMA", "Color": "#0096fa" },
+  { "Name": "EMA50", "Length": 50, "Source": "Close", "Type": "EMA", "Color": "#9b59b6" },
+  { "Name": "EMA200", "Length": 200, "Source": "Close", "Type": "EMA", "Color": "#e74c3c" }
+]

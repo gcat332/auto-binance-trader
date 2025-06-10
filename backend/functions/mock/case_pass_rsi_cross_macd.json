@@ -1,0 +1,33 @@
+{
+  "EMA": {
+    "9": {
+      "name": "EMA9",
+      "value": 42000,
+      "prev": 42000
+    },
+    "50": {
+      "name": "EMA50",
+      "value": 43000,
+      "prev": 43000
+    },
+    "cross": false
+  },
+  "RSI": {
+    "14": {
+      "name": "RSI",
+      "value": 35,
+      "prev": 25
+    }
+  },
+  "MACD": {
+    "name": "MACD",
+    "value": 75,
+    "prev": 65,
+    "signal": 60,
+    "prev_signal": 60
+  },
+  "VOLUME": {
+    "name": "VOLUME",
+    "value": 1000
+  }
+}

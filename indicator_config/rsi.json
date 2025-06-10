@@ -1,0 +1,9 @@
+[
+    {
+        "Name": "RSI",
+        "Length": 14,
+        "Overbought Level": 70,
+        "Oversold Level": 30,
+        "Source": "Close" 
+    }
+]

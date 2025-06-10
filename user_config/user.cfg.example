@@ -1,0 +1,11 @@
+[binance]
+api_key = xxxxxxxxxxxxxxxxxxx
+api_secret = xxxxxxxxxxxxxxxxxxx
+api_key_test = xxxxxxxxxxxxxxxxxxx
+api_key_future_test = xxxxxxxxxxxxxxxxxxx
+api_secret_test = xxxxxxxxxxxxxxxxxxx
+api_secret_future_test = xxxxxxxxxxxxxxxxxxx
+network = testnet
+symbol = BTCUSDT
+
+

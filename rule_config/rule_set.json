@@ -1,0 +1,36 @@
+[
+  {
+    "rule_name": "BTC Buy",
+    "active": false,
+    "description": "Test Long",
+    "scope": "FUTURE",
+    "trigger": "BUY",
+    "symbol": "BTCUSDT",
+    "size_usdt": "110",
+    "logic": {
+      "indicator": "RSI",
+      "type": "RSI",
+      "operator": "<",
+      "value": 50
+    },
+    "tp": 3,
+    "sl": 3
+  },
+  {
+    "rule_name": "BTC Sell",
+    "active": false,
+    "description": "Test Short",
+    "scope": "FUTURE",
+    "trigger": "SELL",
+    "symbol": "BTCUSDT",
+    "size_usdt": "110",
+    "logic": {
+      "indicator": "RSI",
+      "type": "RSI",
+      "operator": "cross_down",
+      "compared": "overbought"
+    },
+    "tp": 5,
+    "sl": 5
+  }
+]
