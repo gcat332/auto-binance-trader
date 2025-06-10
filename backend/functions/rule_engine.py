@@ -124,11 +124,6 @@ class RuleEngine:
 
             if self._eval_logic(logic, indicator_data):
                 matched = True
-                trigger = rule.get("trigger", "BUY").upper()
-                symbol = rule.get("symbol", "BTCUSDT")
-                size_usdt = float(rule.get("size_usdt", 0))
-                tp = rule.get("tp")
-                sl = rule.get("sl")
         return matched
     
     def _eval_logic(self, node: dict, data: dict) -> bool:
@@ -142,13 +137,11 @@ class RuleEngine:
         return result
 
     def _eval_condition(self, cond: dict, data: dict) -> bool:
-        ind_name = cond.get("indicator")
         op = cond.get("operator")
         val = cond.get("value")
         compared = cond.get("compared")
         name = cond.get("name")
         ind_type = (cond.get("indicator") or "").upper()
-
         # --- TIME FILTER ---
         if ind_type == "TIME":
             # val = ["09:00", "17:00"]
@@ -210,12 +203,11 @@ class RuleEngine:
         return self._eval_condition_classic(cond, data)
 
     def _eval_condition_classic(self, cond, data):
-        ind_name = cond.get("indicator")
         op = cond.get("operator")
         val = cond.get("value")
         compared = cond.get("compared")
-        ind_type = cond.get("type", "").upper()
         name = cond.get("name")
+        ind_type = (cond.get("indicator") or "").upper()
         # รองรับหลาย EMA/RSI/MACD (ค้นหาด้วยชื่อ)
         group = data.get(ind_type, {})
         indicator = group.get(name) if group else None
@@ -238,7 +230,6 @@ class RuleEngine:
         elif ind_type == "MACD":
             if compared == "signal":
                 comp_val = indicator.get("signal")
-                comp_prev = indicator.get("prev_signal")
             elif compared in group:
                 comp_val = group[compared]["value"]
             elif compared:
@@ -246,7 +237,6 @@ class RuleEngine:
         elif ind_type == "EMA":
             if compared in group:
                 comp_val = group[compared]["value"]
-                comp_prev = group[compared]["prev"]
             elif compared:
                 comp_val = float(compared)
         else:
@@ -256,15 +246,15 @@ class RuleEngine:
                 comp_val = float(compared)
         if comp_val is None and val is not None:
             comp_val = float(val)
-        return self._compare(ind_val, op, comp_val, ind_prev, comp_prev)
+        return self._compare(ind_val, op, comp_val, ind_prev)
 
-    def _compare(self, a, op, b, a_prev=None, b_prev=None):
+    def _compare(self, a, op, b, a_prev=None):
         if a is None or b is None:
             return False
         if op == "cross_up":
-            return a_prev is not None and b_prev is not None and a_prev < b_prev and a > b
+            return a_prev is not None and a_prev <= b and a > b
         if op == "cross_down":
-            return a_prev is not None and b_prev is not None and a_prev > b_prev and a < b
+            return a_prev is not None and a_prev >= b and a < b
         if op == ">":
             return a > b
         if op == "<":
