@@ -76,4 +76,4 @@ desktop.ini
 *.bak
 *.tmp
 .history/
-.cfg
+*.cfg
