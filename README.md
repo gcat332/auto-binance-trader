@@ -27,11 +27,9 @@ Trading Bot สำหรับ Binance ที่มีทั้งฝั่ง B
   - คำนวณ Indicator
   - ประมวลผล Rule ทุกเงื่อนไข
   - ต่อ Binance API เทรดจริงหรือเทรดจำลอง
-  - ทดสอบย้อนหลังได้ (Backtest ด้วย mock data)
 
 - **Log & Debug:**
-  - Batch test พร้อม log สี (HTML)
-  - สรุปผลเทสในไฟล์ `test_output_colored.html`
+  - พร้อม log สี
 
 ---
 
@@ -41,11 +39,11 @@ Trading Bot สำหรับ Binance ที่มีทั้งฝั่ง B
 trading-bot/
 │
 ├── backend/
-│   ├── functions/
+│   ├── functions/              # Sub-component of backend
 │   │   ├── binance_client.py
 │   │   ├── indicator.py
 │   │   ├── log_engine.py
-│   │   ├── rule_engine.py
+│   │   ├── rule_engine.py    
 │   ├── venv/                   # Python virtual environment
 │   ├── main.py                 # FastAPI entrypoint
 │   ├── requirements.txt
@@ -55,12 +53,12 @@ trading-bot/
 │   ├── public/
 │   ├── src/
 │   │   ├── assets/
-│   │   ├── components/
+│   │   ├── components/         # Sub-component of frontend
 │   │   │   ├── App.css
 │   │   │   ├── App.jsx
 │   │   │   ├── index.css
 │   │   │   └── main.jsx
-│   │   ├── App.jsx
+│   │   ├── App.jsx             # React app
 │   │   └── index.html
 │   ├── eslint.config.js
 │   ├── index.html
@@ -68,16 +66,16 @@ trading-bot/
 │   ├── package-lock.json
 │   └── vite.config.js
 │
-├── indicator_config/
+├── indicator_config/           # Indicator configs will collected here
 │   ├── ema.json
 │   ├── macd.json
 │   └── rsi.json
 │
-├── log/
+├── log/                        # Log to show in frontend
 │
-├── rule_config/
+├── rule_config/                # Rule configs will collected here
 │
-└── user_config/
+└── user_config/                # API key and Testnet properties
 
 ```
 
@@ -105,8 +103,6 @@ trading-bot/
 
 4. **ตั้งค่า Indicator & Rule**
    - แก้ไข `backend/ema.json`, `rsi.json`, `macd.json`
-   - สร้าง/แก้ไขกฎใน `backend/mock_rule_set.json`
-   - ใช้ mock data (`backend/mockup_indicator.json`) สำหรับ backtest
 
 5. **รัน Backend**
    ```bash
@@ -141,14 +137,6 @@ trading-bot/
 
 ---
 
-## การ Backtest
-
-- วางไฟล์ `mockup_indicator.json`, `mock_rule_set.json` ใน backend
-- รัน `python test.py`
-- ตรวจสอบผลเทสที่ terminal และ `test_output_colored.html`
-
----
-
 ## Frontend UI (React)
 
 - Drag-and-drop สร้าง/แก้ไขกฎแบบ visual (RuleBuilder)
@@ -159,8 +147,8 @@ trading-bot/
 
 ## Roadmap
 
-- [ ] เพิ่ม Pattern แท่งเทียน, แจ้งเตือน Line/Discord
-- [ ] Dashboard Monitor
+- [ ] แจ้งเตือน Line/Discord
+- [ ] Backlog test
 - [ ] Plug-in custom indicator
 
 ---
@@ -173,4 +161,4 @@ trading-bot/
 
 ---
 
-_ขอให้โชคดีในการเทรด!_
+_🐈ขอให้โชคดีในการเทรด!🐈‍⬛_
