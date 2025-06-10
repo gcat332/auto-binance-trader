@@ -1,184 +1,183 @@
 [
   {
     "active": true,
-    "rule_name": "PRICE > Manual",
-    "scope": "SPOT",
-    "logic": {
-      "type": "condition",
-      "indicator": "PRICE",
-      "name": "CLOSE",
-      "operator": ">",
-      "value": 95
-    }
-  },
-  {
-    "active": true,
-    "rule_name": "PRICE < EMA9",
+    "rule_name": "PRICE < Manual (pass)",
     "scope": "SPOT",
     "logic": {
       "type": "condition",
       "indicator": "PRICE",
       "name": "CLOSE",
       "operator": "<",
-      "compared": "EMA9"
+      "value": 200
     }
   },
   {
     "active": true,
-    "rule_name": "EMA9 Golden Cross EMA21",
+    "rule_name": "PRICE > EMA21 (fail)",
     "scope": "SPOT",
     "logic": {
       "type": "condition",
-      "indicator": "EMA",
-      "name": "EMA9",
-      "operator": "cross_up",
+      "indicator": "PRICE",
+      "name": "CLOSE",
+      "operator": ">",
       "compared": "EMA21"
     }
   },
   {
     "active": true,
-    "rule_name": "EMA21 < Manual",
+    "rule_name": "EMA9 = Manual (fail)",
     "scope": "SPOT",
     "logic": {
       "type": "condition",
       "indicator": "EMA",
-      "name": "EMA21",
-      "operator": "<",
-      "value": 98
+      "name": "EMA9",
+      "operator": "=",
+      "value": 150
     }
   },
   {
     "active": true,
-    "rule_name": "RSI cross overbought",
+    "rule_name": "RSI > Manual (pass)",
     "scope": "SPOT",
     "logic": {
       "type": "condition",
       "indicator": "RSI",
-      "name": "RSI",
-      "operator": "cross_up",
-      "compared": "overbought"
+      "name": "RSI14",
+      "operator": ">",
+      "value": 10
     }
   },
   {
     "active": true,
-    "rule_name": "RSI < Manual",
-    "scope": "SPOT",
-    "logic": {
-      "type": "condition",
-      "indicator": "RSI",
-      "name": "RSI",
-      "operator": "<",
-      "value": 70
-    }
-  },
-  {
-    "active": true,
-    "rule_name": "MACD cross signal",
+    "rule_name": "MACD < signal (true)",
     "scope": "SPOT",
     "logic": {
       "type": "condition",
       "indicator": "MACD",
-      "name": "MACD",
-      "operator": "cross_up",
+      "name": "MACD12_26",
+      "operator": "<",
       "compared": "signal"
     }
   },
   {
     "active": true,
-    "rule_name": "MACD > Manual",
-    "scope": "SPOT",
-    "logic": {
-      "type": "condition",
-      "indicator": "MACD",
-      "name": "MACD",
-      "operator": ">",
-      "value": 1.5
-    }
-  },
-  {
-    "active": true,
-    "rule_name": "VOLUME > Manual",
-    "scope": "SPOT",
-    "logic": {
-      "type": "condition",
-      "indicator": "VOLUME",
-      "operator": ">",
-      "value": 2500
-    }
-  },
-  {
-    "active": true,
-    "rule_name": "BREAKOUT HIGH_20",
+    "rule_name": "BREAKOUT HIGH_50 > 50 (pass)",
     "scope": "SPOT",
     "logic": {
       "type": "condition",
       "indicator": "BREAKOUT",
       "name": "HIGH",
       "operator": ">",
-      "value": 20
+      "value": 50
     }
   },
   {
     "active": true,
-    "rule_name": "BREAKOUT LOW_20 fail case",
+    "rule_name": "CANDLE BEARISH_ENGULFING (pass)",
+    "scope": "SPOT",
+    "logic": {
+      "type": "condition",
+      "indicator": "CANDLE",
+      "name": "BEARISH_ENGULFING"
+    }
+  },
+  {
+    "active": true,
+    "rule_name": "TIME 10:00-11:00 (fail)",
+    "scope": "SPOT",
+    "logic": {
+      "type": "condition",
+      "indicator": "TIME",
+      "value": [
+        "10:00",
+        "11:00"
+      ]
+    }
+  },
+  {
+    "active": true,
+    "rule_name": "VOLUME < Manual (fail)",
+    "scope": "SPOT",
+    "logic": {
+      "type": "condition",
+      "indicator": "VOLUME",
+      "operator": "<",
+      "value": 1000
+    }
+  },
+  {
+    "active": true,
+    "rule_name": "PRICE OPEN = 95 (pass)",
+    "scope": "SPOT",
+    "logic": {
+      "type": "condition",
+      "indicator": "PRICE",
+      "name": "OPEN",
+      "operator": "=",
+      "value": 95
+    }
+  },
+  {
+    "active": true,
+    "rule_name": "EMA50 Golden Cross EMA21 (fail)",
+    "scope": "SPOT",
+    "logic": {
+      "type": "condition",
+      "indicator": "EMA",
+      "name": "EMA50",
+      "operator": "cross_up",
+      "compared": "EMA21"
+    }
+  },
+  {
+    "active": true,
+    "rule_name": "RSI cross_down overbought (fail)",
+    "scope": "SPOT",
+    "logic": {
+      "type": "condition",
+      "indicator": "RSI",
+      "name": "RSI14",
+      "operator": "cross_down",
+      "compared": "overbought"
+    }
+  },
+  {
+    "active": true,
+    "rule_name": "MACD cross_up signal (fail)",
+    "scope": "SPOT",
+    "logic": {
+      "type": "condition",
+      "indicator": "MACD",
+      "name": "MACD12_26",
+      "operator": "cross_up",
+      "compared": "signal"
+    }
+  },
+  {
+    "active": true,
+    "rule_name": "CANDLE HAMMER (pass)",
+    "scope": "SPOT",
+    "logic": {
+      "type": "condition",
+      "indicator": "CANDLE",
+      "name": "HAMMER"
+    }
+  },
+  {
+    "active": true,
+    "rule_name": "BREAKOUT LOW_100 < 10 (fail)",
     "scope": "SPOT",
     "logic": {
       "type": "condition",
       "indicator": "BREAKOUT",
       "name": "LOW",
       "operator": "<",
-      "value": 20
+      "value": 10
     }
   },
   {
     "active": true,
-    "rule_name": "CANDLE BULLISH_ENGULFING pass",
-    "scope": "SPOT",
-    "logic": {
-      "type": "condition",
-      "indicator": "CANDLE",
-      "name": "BULLISH_ENGULFING"
-    }
-  },
-  {
-    "active": true,
-    "rule_name": "CANDLE DOJI fail",
-    "scope": "SPOT",
-    "logic": {
-      "type": "condition",
-      "indicator": "CANDLE",
-      "name": "DOJI"
-    }
-  },
-  {
-    "active": true,
-    "rule_name": "TIME PASS 09:00-17:00",
-    "scope": "SPOT",
-    "logic": {
-      "type": "condition",
-      "indicator": "TIME",
-      "value": [
-        "09:00",
-        "17:00"
-      ]
-    }
-  },
-  {
-    "active": true,
-    "rule_name": "TIME FAIL 00:00-05:00",
-    "scope": "SPOT",
-    "logic": {
-      "type": "condition",
-      "indicator": "TIME",
-      "value": [
-        "00:00",
-        "05:00"
-      ]
-    }
-  },
-  {
-    "active": true,
-    "rule_name": "AND/OR NESTED",
+    "rule_name": "AND: PRICE>95 & RSI>60 (pass)",
     "scope": "SPOT",
     "logic": {
       "type": "AND",
@@ -191,20 +190,106 @@
           "value": 95
         },
         {
-          "type": "OR",
-          "conditions": [
-            {
-              "type": "condition",
-              "indicator": "RSI",
-              "name": "RSI",
-              "operator": ">",
-              "value": 60
-            },
-            {
-              "type": "condition",
-              "indicator": "CANDLE",
-              "name": "HAMMER"
-            }
+          "type": "condition",
+          "indicator": "RSI",
+          "name": "RSI14",
+          "operator": ">",
+          "value": 20
+        }
+      ]
+    }
+  },
+  {
+    "active": true,
+    "rule_name": "AND: MACD>0 & VOLUME>10000 (fail)",
+    "scope": "SPOT",
+    "logic": {
+      "type": "AND",
+      "conditions": [
+        {
+          "type": "condition",
+          "indicator": "MACD",
+          "name": "MACD12_26",
+          "operator": ">",
+          "value": 0
+        },
+        {
+          "type": "condition",
+          "indicator": "VOLUME",
+          "operator": ">",
+          "value": 10000
+        }
+      ]
+    }
+  },
+  {
+    "active": true,
+    "rule_name": "OR: EMA9<100 | EMA21=97 (pass)",
+    "scope": "SPOT",
+    "logic": {
+      "type": "OR",
+      "conditions": [
+        {
+          "type": "condition",
+          "indicator": "EMA",
+          "name": "EMA9",
+          "operator": "<",
+          "value": 100
+        },
+        {
+          "type": "condition",
+          "indicator": "EMA",
+          "name": "EMA21",
+          "operator": "=",
+          "value": 97
+        }
+      ]
+    }
+  },
+  {
+    "active": true,
+    "rule_name": "OR: RSI<10 | MACD<0 (fail)",
+    "scope": "SPOT",
+    "logic": {
+      "type": "OR",
+      "conditions": [
+        {
+          "type": "condition",
+          "indicator": "RSI",
+          "name": "RSI14",
+          "operator": "<",
+          "value": 10
+        },
+        {
+          "type": "condition",
+          "indicator": "MACD",
+          "name": "MACD12_26",
+          "operator": "<",
+          "value": 0
+        }
+      ]
+    }
+  },
+  {
+    "active": true,
+    "rule_name": "AND: BREAKOUT HIGH_10>100 & TIME 09:00-20:00 (pass)",
+    "scope": "SPOT",
+    "logic": {
+      "type": "AND",
+      "conditions": [
+        {
+          "type": "condition",
+          "indicator": "BREAKOUT",
+          "name": "HIGH",
+          "operator": ">",
+          "value": 100
+        },
+        {
+          "type": "condition",
+          "indicator": "TIME",
+          "value": [
+            "09:00",
+            "20:00"
           ]
         }
       ]
@@ -212,50 +297,269 @@
   },
   {
     "active": true,
-    "rule_name": "EMA9 Death Cross EMA21 (cross_down, fail case)",
+    "rule_name": "AND: CANDLE DOJI & VOLUME>2000 (fail)",
     "scope": "SPOT",
     "logic": {
-      "type": "condition",
-      "indicator": "EMA",
-      "name": "EMA9",
-      "operator": "cross_down",
-      "compared": "EMA21"
+      "type": "AND",
+      "conditions": [
+        {
+          "type": "condition",
+          "indicator": "CANDLE",
+          "name": "DOJI"
+        },
+        {
+          "type": "condition",
+          "indicator": "VOLUME",
+          "operator": ">",
+          "value": 2000
+        }
+      ]
     }
   },
   {
     "active": true,
-    "rule_name": "RSI cross_down oversold (pass)",
+    "rule_name": "OR: TIME 00:00-05:00 | VOLUME<100 (fail)",
     "scope": "SPOT",
     "logic": {
-      "type": "condition",
-      "indicator": "RSI",
-      "name": "RSI",
-      "operator": "cross_down",
-      "compared": "oversold"
+      "type": "OR",
+      "conditions": [
+        {
+          "type": "condition",
+          "indicator": "TIME",
+          "value": [
+            "00:00",
+            "05:00"
+          ]
+        },
+        {
+          "type": "condition",
+          "indicator": "VOLUME",
+          "operator": "<",
+          "value": 100
+        }
+      ]
     }
   },
   {
     "active": true,
-    "rule_name": "MACD cross_down signal (pass)",
+    "rule_name": "AND: EMA9>EMA21 & MACD cross_down signal (true)",
     "scope": "SPOT",
     "logic": {
-      "type": "condition",
-      "indicator": "MACD",
-      "name": "MACD",
-      "operator": "cross_down",
-      "compared": "signal"
+      "type": "AND",
+      "conditions": [
+        {
+          "type": "condition",
+          "indicator": "EMA",
+          "name": "EMA9",
+          "operator": ">",
+          "compared": "EMA21"
+        },
+        {
+          "type": "condition",
+          "indicator": "MACD",
+          "name": "MACD12_26",
+          "operator": "cross_down",
+          "compared": "signal"
+        }
+      ]
     }
   },
   {
     "active": true,
-    "rule_name": "PRICE cross_down EMA9 (fail)",
+    "rule_name": "AND: CANDLE BULLISH_ENGULFING & RSI cross_up overbought (fail)",
     "scope": "SPOT",
     "logic": {
-      "type": "condition",
-      "indicator": "PRICE",
-      "name": "CLOSE",
-      "operator": "cross_down",
-      "compared": "EMA9"
+      "type": "AND",
+      "conditions": [
+        {
+          "type": "condition",
+          "indicator": "CANDLE",
+          "name": "BULLISH_ENGULFING"
+        },
+        {
+          "type": "condition",
+          "indicator": "RSI",
+          "name": "RSI14",
+          "operator": "cross_up",
+          "compared": "overbought"
+        }
+      ]
+    }
+  },
+  {
+    "active": true,
+    "rule_name": "AND: EMA9 cross_down EMA21 & PRICE < EMA9 (pass)",
+    "scope": "SPOT",
+    "logic": {
+      "type": "AND",
+      "conditions": [
+        {
+          "type": "condition",
+          "indicator": "EMA",
+          "name": "EMA9",
+          "operator": "cross_down",
+          "compared": "EMA21"
+        },
+        {
+          "type": "condition",
+          "indicator": "PRICE",
+          "name": "CLOSE",
+          "operator": "<",
+          "compared": "EMA9"
+        }
+      ]
+    }
+  },
+  {
+    "active": true,
+    "rule_name": "NEST: (RSI>10 AND MACD>0) OR VOLUME>1000 (pass)",
+    "scope": "SPOT",
+    "logic": {
+      "type": "OR",
+      "conditions": [
+        {
+          "type": "AND",
+          "conditions": [
+            {
+              "type": "condition",
+              "indicator": "RSI",
+              "name": "RSI14",
+              "operator": ">",
+              "value": 10
+            },
+            {
+              "type": "condition",
+              "indicator": "MACD",
+              "name": "MACD12_26",
+              "operator": ">",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "type": "condition",
+          "indicator": "VOLUME",
+          "operator": ">",
+          "value": 1000
+        }
+      ]
+    }
+  },
+  {
+    "active": true,
+    "rule_name": "NEST: (EMA21<96 OR PRICE>120) AND BREAKOUT HIGH_10>103 (fail)",
+    "scope": "SPOT",
+    "logic": {
+      "type": "AND",
+      "conditions": [
+        {
+          "type": "OR",
+          "conditions": [
+            {
+              "type": "condition",
+              "indicator": "EMA",
+              "name": "EMA21",
+              "operator": "<",
+              "value": 96
+            },
+            {
+              "type": "condition",
+              "indicator": "PRICE",
+              "name": "CLOSE",
+              "operator": ">",
+              "value": 120
+            }
+          ]
+        },
+        {
+          "type": "condition",
+          "indicator": "BREAKOUT",
+          "name": "HIGH",
+          "operator": ">",
+          "value": 103
+        }
+      ]
+    }
+  },
+  {
+    "active": true,
+    "rule_name": "NEST: (VOLUME>2000 AND CANDLE HAMMER) OR (TIME 09:00-17:00) (pass)",
+    "scope": "SPOT",
+    "logic": {
+      "type": "OR",
+      "conditions": [
+        {
+          "type": "AND",
+          "conditions": [
+            {
+              "type": "condition",
+              "indicator": "VOLUME",
+              "operator": ">",
+              "value": 2000
+            },
+            {
+              "type": "condition",
+              "indicator": "CANDLE",
+              "name": "HAMMER"
+            }
+          ]
+        },
+        {
+          "type": "condition",
+          "indicator": "TIME",
+          "value": [
+            "09:00",
+            "17:00"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "active": true,
+    "rule_name": "NEST: (EMA50=96 AND MACD cross_down signal) OR (RSI<20 AND VOLUME>5000) (fail)",
+    "scope": "SPOT",
+    "logic": {
+      "type": "OR",
+      "conditions": [
+        {
+          "type": "AND",
+          "conditions": [
+            {
+              "type": "condition",
+              "indicator": "EMA",
+              "name": "EMA50",
+              "operator": "=",
+              "value": 96
+            },
+            {
+              "type": "condition",
+              "indicator": "MACD",
+              "name": "MACD12_26",
+              "operator": "cross_down",
+              "compared": "signal"
+            }
+          ]
+        },
+        {
+          "type": "AND",
+          "conditions": [
+            {
+              "type": "condition",
+              "indicator": "RSI",
+              "name": "RSI14",
+              "operator": "<",
+              "value": 20
+            },
+            {
+              "type": "condition",
+              "indicator": "VOLUME",
+              "operator": ">",
+              "value": 5000
+            }
+          ]
+        }
+      ]
     }
   }
 ]

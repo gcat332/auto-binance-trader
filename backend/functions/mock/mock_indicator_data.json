@@ -1,19 +1,51 @@
 {
   "PRICE": {
-    "CLOSE": {"name": "CLOSE", "value": 100, "prev": 98},
-    "OPEN": {"name": "OPEN", "value": 95, "prev": 97},
-    "HIGH": {"name": "HIGH", "value": 105, "prev": 103},
-    "LOW": {"name": "LOW", "value": 90, "prev": 92},
-    "VOLUME": {"name": "VOLUME", "value": 3000, "prev": 2800}
+    "CLOSE": {
+      "name": "CLOSE",
+      "value": 100,
+      "prev": 98
+    },
+    "OPEN": {
+      "name": "OPEN",
+      "value": 95,
+      "prev": 97
+    },
+    "HIGH": {
+      "name": "HIGH",
+      "value": 105,
+      "prev": 103
+    },
+    "LOW": {
+      "name": "LOW",
+      "value": 90,
+      "prev": 92
+    },
+    "VOLUME": {
+      "name": "VOLUME",
+      "value": 3000,
+      "prev": 2800
+    }
   },
   "EMA": {
-    "EMA9": {"name": "EMA9", "value": 99, "prev": 100},
-    "EMA21": {"name": "EMA21", "value": 97, "prev": 98},
-    "EMA50": {"name": "EMA50", "value": 96, "prev": 97}
+    "EMA9": {
+      "name": "EMA9",
+      "value": 99,
+      "prev": 100
+    },
+    "EMA21": {
+      "name": "EMA21",
+      "value": 97,
+      "prev": 98
+    },
+    "EMA50": {
+      "name": "EMA50",
+      "value": 95,
+      "prev": 94
+    }
   },
   "RSI": {
-    "RSI": {
-      "name": "RSI",
+    "RSI14": {
+      "name": "RSI14",
       "value": 25,
       "prev": 32,
       "Overbought": 70,
@@ -21,8 +53,8 @@
     }
   },
   "MACD": {
-    "MACD": {
-      "name": "MACD",
+    "MACD12_26": {
+      "name": "MACD12_26",
       "value": 1.0,
       "prev": 2.0,
       "signal": 1.5,
@@ -34,14 +66,46 @@
     "value": 3000
   },
   "BREAKOUT": {
-    "HIGH_10": {"name": "HIGH", "lookback": 10, "value": 104},
-    "HIGH_20": {"name": "HIGH", "lookback": 20, "value": 104},
-    "HIGH_50": {"name": "HIGH", "lookback": 50, "value": 104},
-    "HIGH_100": {"name": "HIGH", "lookback": 100, "value": 104},
-    "LOW_10": {"name": "LOW", "lookback": 10, "value": 89},
-    "LOW_20": {"name": "LOW", "lookback": 20, "value": 89},
-    "LOW_50": {"name": "LOW", "lookback": 50, "value": 89},
-    "LOW_100": {"name": "LOW", "lookback": 100, "value": 89}
+    "HIGH_10": {
+      "name": "HIGH",
+      "lookback": 10,
+      "value": 104
+    },
+    "HIGH_20": {
+      "name": "HIGH",
+      "lookback": 20,
+      "value": 104
+    },
+    "HIGH_50": {
+      "name": "HIGH",
+      "lookback": 50,
+      "value": 104
+    },
+    "HIGH_100": {
+      "name": "HIGH",
+      "lookback": 100,
+      "value": 104
+    },
+    "LOW_10": {
+      "name": "LOW",
+      "lookback": 10,
+      "value": 89
+    },
+    "LOW_20": {
+      "name": "LOW",
+      "lookback": 20,
+      "value": 89
+    },
+    "LOW_50": {
+      "name": "LOW",
+      "lookback": 50,
+      "value": 89
+    },
+    "LOW_100": {
+      "name": "LOW",
+      "lookback": 100,
+      "value": 89
+    }
   },
   "CANDLE": {
     "BULLISH_ENGULFING": true,

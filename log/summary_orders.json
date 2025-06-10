@@ -437,8 +437,8 @@
       "BTCUSDT": {
         "positionAmt": 0.12,
         "entryPrice": 106066.2033334,
-        "markPrice": 108777.93548913,
-        "unrealizedPnL": 325.408
+        "markPrice": 108998.17442029,
+        "unrealizedPnL": 351.837
       }
     }
   }

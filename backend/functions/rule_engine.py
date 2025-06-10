@@ -162,7 +162,7 @@ class RuleEngine:
                     comp_val = float(compared)
                 else:
                     comp_val = float(val)
-                return self._compare(price_val, op, comp_val, price_prev, None)
+                return self._compare(price_val, op, comp_val, price_prev)
             except Exception:
                 return False
 
@@ -216,7 +216,6 @@ class RuleEngine:
         ind_val = indicator.get("value")
         ind_prev = indicator.get("prev")
         comp_val = None
-        comp_prev = None
 
         if ind_type == "RSI":
             if compared == "oversold":
