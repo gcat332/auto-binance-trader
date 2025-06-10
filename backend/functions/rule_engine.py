@@ -93,6 +93,44 @@ class RuleEngine:
                     self.logger.log_trade(f"[ERROR] Order failed for rule '{rule_name}': {e}")
         return matched
 
+    def check(self, sindicator_data: Dict[str, Any], findicator_data: Dict[str, Any]) -> bool:
+        if not self.rules or not isinstance(self.rules, list):
+            self.logger.log_trade("[ERROR] Failed to load rules")
+            return False
+
+        matched = False
+
+        for rule in self.rules:
+            if rule.get("scope") == "SPOT":
+                client = self.sclient
+                indicator_data = sindicator_data
+            else:
+                client = self.fclient
+                indicator_data = findicator_data
+
+            if not rule or not isinstance(rule, dict) or not rule.get("active"):
+                self.logger.log_trade("[INFO] Skipping inactive rule")
+                continue
+
+            rule_name = rule.get("rule_name", "Unnamed Rule")
+            logic = rule.get("logic")
+            if not logic:
+                self.logger.log_trade(f"[WARN] Rule '{rule_name}' has no logic")
+                continue
+
+            if not self._validate_logic_structure(logic):
+                self.logger.log_trade(f"[ERROR] Invalid logic structure in rule: {rule_name}")
+                continue
+
+            if self._eval_logic(logic, indicator_data):
+                matched = True
+                trigger = rule.get("trigger", "BUY").upper()
+                symbol = rule.get("symbol", "BTCUSDT")
+                size_usdt = float(rule.get("size_usdt", 0))
+                tp = rule.get("tp")
+                sl = rule.get("sl")
+        return matched
+    
     def _eval_logic(self, node: dict, data: dict) -> bool:
         ntype = node.get("type")
         if ntype == "AND":

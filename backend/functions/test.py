@@ -43,7 +43,7 @@ if __name__ == "__main__":
         # ทดสอบทีละ rule (override rule set)
         engine.rules = [rule]
         # จะเรียก check_create_order() โดยใช้ sind/find ตาม scope
-        matched = engine.check_create_order(sindicator_data=sind, findicator_data=find)
+        matched = engine.check(sindicator_data=sind, findicator_data=find)
         print("Matched:", matched)
 
     print("\n========= END =========")

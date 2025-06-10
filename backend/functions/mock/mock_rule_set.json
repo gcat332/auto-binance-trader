@@ -54,7 +54,7 @@
     "logic": {
       "type": "condition",
       "indicator": "RSI",
-      "name": "RSI14",
+      "name": "RSI",
       "operator": "cross_up",
       "compared": "overbought"
     }
@@ -66,7 +66,7 @@
     "logic": {
       "type": "condition",
       "indicator": "RSI",
-      "name": "RSI14",
+      "name": "RSI",
       "operator": "<",
       "value": 70
     }
@@ -78,7 +78,7 @@
     "logic": {
       "type": "condition",
       "indicator": "MACD",
-      "name": "MACD12_26",
+      "name": "MACD",
       "operator": "cross_up",
       "compared": "signal"
     }
@@ -90,7 +90,7 @@
     "logic": {
       "type": "condition",
       "indicator": "MACD",
-      "name": "MACD12_26",
+      "name": "MACD",
       "operator": ">",
       "value": 1.5
     }
@@ -196,7 +196,7 @@
             {
               "type": "condition",
               "indicator": "RSI",
-              "name": "RSI14",
+              "name": "RSI",
               "operator": ">",
               "value": 60
             },
@@ -229,7 +229,7 @@
     "logic": {
       "type": "condition",
       "indicator": "RSI",
-      "name": "RSI14",
+      "name": "RSI",
       "operator": "cross_down",
       "compared": "oversold"
     }
@@ -241,7 +241,7 @@
     "logic": {
       "type": "condition",
       "indicator": "MACD",
-      "name": "MACD12_26",
+      "name": "MACD",
       "operator": "cross_down",
       "compared": "signal"
     }
