@@ -89,6 +89,13 @@ body {
   background-color: #a16d0b;
 }
 
+.rulemanager-action-btn.test {
+  background-color: #1faa49;
+}
+
+.rulemanager-action-btn.test:hover {
+  background-color: rgb(4, 139, 22);
+}
 .rulemodal-backdrop {
   position: fixed;
   inset: 0;

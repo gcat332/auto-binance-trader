@@ -1,11 +1,10 @@
+
 import json
 from datetime import datetime
 from typing import List, Dict, Any, Union
 
+
 class RuleEngine:
-    """
-    RuleEngine สำหรับประเมิน logic JSON รูปแบบใหม่ (AND/OR + Condition ทุกประเภท)
-    """
     def __init__(self, rule_path: str, sclient, fclient, logger, rsi_config=None, ema_config=None, macd_config=None):
         self.rule_path = rule_path
         self.rules = self.load_rule()
@@ -15,6 +14,7 @@ class RuleEngine:
         self.rsi_config = rsi_config or []
         self.ema_config = ema_config or []
         self.macd_config = macd_config or []
+        self.holding_orders = {}  # track open positions
 
     def load_rule(self) -> List[Dict[str, Any]]:
         try:
@@ -40,9 +40,6 @@ class RuleEngine:
             json.dump(rules_to_save, f, ensure_ascii=False, indent=2)
 
     def check_create_order(self, sindicator_data: Dict[str, Any], findicator_data: Dict[str, Any]) -> bool:
-        """
-        ประเมิน rule ทั้งหมด ถ้าผ่านจะสร้าง order (ผ่าน client) และ log ไว้
-        """
         self.rules = self.load_rule()
         if not self.rules or not isinstance(self.rules, list):
             self.logger.log_trade("[ERROR] Failed to load rules")
@@ -63,7 +60,10 @@ class RuleEngine:
                 continue
 
             rule_name = rule.get("rule_name", "Unnamed Rule")
+            scope = rule.get("scope", "SPOT").upper()
             logic = rule.get("logic")
+            key = f"{scope}_{rule_name}"
+
             if not logic:
                 self.logger.log_trade(f"[WARN] Rule '{rule_name}' has no logic")
                 continue
@@ -71,6 +71,24 @@ class RuleEngine:
             if not self._validate_logic_structure(logic):
                 self.logger.log_trade(f"[ERROR] Invalid logic structure in rule: {rule_name}")
                 continue
+
+            # หากถืออยู่แล้ว รอ TP/SL ก่อน
+            if key in self.holding_orders:
+                try:
+                    symbol = rule.get("symbol", "BTCUSDT")
+                    price_data = client.client.get_symbol_ticker(symbol=symbol)
+                    current_price = float(price_data["price"])
+                    holding = self.holding_orders[key]
+
+                    if self._check_exit_condition(current_price, holding):
+                        self.logger.log_trade(f"[INFO] Rule '{rule_name}' hit TP/SL, clearing holding.")
+                        del self.holding_orders[key]
+                    else:
+                        self.logger.log_trade(f"[INFO] Skipping '{rule_name}' — still holding position.")
+                        continue
+                except Exception as e:
+                    self.logger.log_trade(f"[ERROR] Could not check holding exit for '{rule_name}': {e}")
+                    continue
 
             if self._eval_logic(logic, indicator_data):
                 matched = True
@@ -89,10 +107,34 @@ class RuleEngine:
                     )
                     self.logger.log_trade(f"[INFO] Rule matched: {rule_name}")
                     self.logger.log_trade(f"[INFO] Order result: {result}")
+                    entry = float(result.get("avgFillPrice") or result.get("calculated_price"))
+                    tp_price = entry * (1 + tp/100) if trigger == "BUY" else entry * (1 - tp/100)
+                    sl_price = entry * (1 - sl/100) if trigger == "BUY" else entry * (1 + sl/100)
+                    self.holding_orders[key] = {
+                        "side": trigger,
+                        "entry_price": entry,
+                        "tp_price": tp_price,
+                        "sl_price": sl_price
+                    }
                 except Exception as e:
                     self.logger.log_trade(f"[ERROR] Order failed for rule '{rule_name}': {e}")
         return matched
 
+    def _check_exit_condition(self, current_price: float, holding: dict) -> bool:
+        side = holding["side"]
+        if side == "BUY":
+            return current_price >= holding["tp_price"] or current_price <= holding["sl_price"]
+        else:
+            return current_price <= holding["tp_price"] or current_price >= holding["sl_price"]
+
+    # ---- remaining unchanged methods will be appended here...
+
+    def eval_logic_direct(self, logic: dict, indicator_data: dict) -> bool:
+        """Evaluate a logic node directly using indicator data."""
+        if not self._validate_logic_structure(logic):
+            self.logger.log_trade("[ERROR] Invalid logic structure for direct eval.")
+            return False
+        return self._eval_logic(logic, indicator_data)
     def check(self, sindicator_data: Dict[str, Any], findicator_data: Dict[str, Any]) -> bool:
         if not self.rules or not isinstance(self.rules, list):
             self.logger.log_trade("[ERROR] Failed to load rules")
@@ -138,7 +180,11 @@ class RuleEngine:
 
     def _eval_condition(self, cond: dict, data: dict) -> bool:
         op = cond.get("operator")
-        val = cond.get("value")
+        val_raw = cond.get("value", 0)
+        try:
+            val = float(val_raw)
+        except (ValueError, TypeError):
+            val = 0
         compared = cond.get("compared")
         name = cond.get("name")
         ind_type = (cond.get("indicator") or "").upper()
@@ -204,7 +250,11 @@ class RuleEngine:
 
     def _eval_condition_classic(self, cond, data):
         op = cond.get("operator")
-        val = cond.get("value")
+        val_raw = cond.get("value", 0)
+        try:
+            val = float(val_raw)
+        except (ValueError, TypeError):
+            val = 0
         compared = cond.get("compared")
         name = cond.get("name")
         ind_type = (cond.get("indicator") or "").upper()
@@ -224,6 +274,8 @@ class RuleEngine:
                 comp_val = indicator.get("Overbought")
             elif compared in group:
                 comp_val = group[compared]["value"]
+            elif compared == "Manual Value":
+                comp_val = float(val)
             elif compared:
                 comp_val = float(compared)
         elif ind_type == "MACD":
@@ -231,16 +283,22 @@ class RuleEngine:
                 comp_val = indicator.get("signal")
             elif compared in group:
                 comp_val = group[compared]["value"]
+            elif compared == "Manual Value":
+                comp_val = float(val)
             elif compared:
                 comp_val = float(compared)
         elif ind_type == "EMA":
             if compared in group:
                 comp_val = group[compared]["value"]
+            elif compared == "Manual Value":
+                comp_val = float(val)
             elif compared:
                 comp_val = float(compared)
         else:
             if compared in group:
                 comp_val = group[compared]["value"]
+            elif compared == "Manual Value":
+                comp_val = float(val)
             elif compared:
                 comp_val = float(compared)
         if comp_val is None and val is not None:
@@ -287,20 +345,24 @@ class RuleEngine:
     def _log_condition_result(self, cond: dict, data: dict, result: bool):
         ind_name = cond.get("indicator")
         op = cond.get("operator")
-        val = cond.get("value")
+        val_raw = cond.get("value", 0)
+        try:
+            val = float(val_raw)
+        except (ValueError, TypeError):
+            val = 0
         compared = cond.get("compared")
         name = cond.get("name")
         ind_type = cond.get("type", "").upper()
         status = "PASS" if result else "FAIL"
 
-        # เพิ่ม format สำหรับประเภท CANDLE, TIME, BREAKOUT, VOLUME
-        if ind_type == "CANDLE":
-            self.logger.log_trade(f"[{status}] {ind_name}/{name}")
-        elif ind_type == "TIME":
-            self.logger.log_trade(f"[{status}] {ind_name}/{name} {val}")
-        elif ind_type == "BREAKOUT":
-            self.logger.log_trade(f"[{status}] {ind_name}/{name} {op} {val}")
-        elif ind_type == "VOLUME":
-            self.logger.log_trade(f"[{status}] {ind_name}/{name} {op} {compared or val}")
-        else:
-            self.logger.log_trade(f"[{status}] {ind_name}/{name} {op} {compared or val}")
+        if status == "PASS":
+            if ind_type == "CANDLE":
+                self.logger.log_trade(f"[{status}] {ind_name}/{name}")
+            elif ind_type == "TIME":
+                self.logger.log_trade(f"[{status}] {ind_name}/{name} {val}")
+            elif ind_type == "BREAKOUT":
+                self.logger.log_trade(f"[{status}] {ind_name}/{name} {op} {val}")
+            elif ind_type == "VOLUME":
+                self.logger.log_trade(f"[{status}] {ind_name}/{name} {op} {compared or val}")
+            else:
+                self.logger.log_trade(f"[{status}] {ind_name}/{name} {op} {compared or val}")

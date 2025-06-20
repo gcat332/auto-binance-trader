@@ -1,129 +1,501 @@
-[2025-06-09 22:05:13] [INFO] Auto Trade Enabled
-[2025-06-09 22:09:07] [INFO] Auto Trade Disabled
-[2025-06-09 22:09:28] [INFO] Auto Trade Enabled
-[2025-06-09 22:10:26] [WARN] Warming up...
-[2025-06-09 22:11:27] [WARN] Warming up...
-[2025-06-09 22:12:28] [WARN] Warming up...
-[2025-06-09 22:13:29] [WARN] Warming up...
-[2025-06-09 22:14:30] [WARN] Warming up...
-[2025-06-09 22:15:32] [WARN] Warming up...
-[2025-06-09 22:16:33] [WARN] Warming up...
-[2025-06-09 22:17:34] [WARN] Warming up...
-[2025-06-09 22:18:35] [WARN] Warming up...
-[2025-06-09 22:19:36] [WARN] Warming up...
-[2025-06-09 22:20:37] [WARN] Warming up...
-[2025-06-09 22:21:39] [WARN] Warming up...
-[2025-06-09 22:22:40] [WARN] Warming up...
-[2025-06-09 22:23:41] [WARN] Warming up...
-[2025-06-09 22:24:42] [WARN] Warming up...
-[2025-06-09 22:24:42] [WARN] Starting trading...
-[2025-06-09 22:24:42] [FAIL] EMA9 (107783.42411149007 → 107774.52827668196) cross_up oversold (30 → 30)
-[2025-06-09 22:24:42] [FAIL] EMA9 (107783.42411149007 → 107774.52827668196) cross_down overbought (70 → 70)
-[2025-06-09 22:25:43] [WARN] Warming up...
-[2025-06-09 22:25:43] [FAIL] EMA9 (107784.18818805843 → 107775.14338441499) cross_up oversold (30 → 30)
-[2025-06-09 22:25:43] [FAIL] EMA9 (107784.18818805843 → 107775.14338441499) cross_down overbought (70 → 70)
-[2025-06-09 22:26:44] [WARN] Warming up...
-[2025-06-09 22:26:44] [FAIL] EMA9 (107786.42385738115 → 107776.93427411454) cross_up oversold (30 → 30)
-[2025-06-09 22:26:44] [FAIL] EMA9 (107786.42385738115 → 107776.93427411454) cross_down overbought (70 → 70)
-[2025-06-09 22:27:45] [WARN] Warming up...
-[2025-06-09 22:27:45] [FAIL] EMA9 (107787.85384879734 → 107778.09991370498) cross_up oversold (30 → 30)
-[2025-06-09 22:27:45] [FAIL] EMA9 (107787.85384879734 → 107778.09991370498) cross_down overbought (70 → 70)
-[2025-06-09 22:28:47] [WARN] Warming up...
-[2025-06-09 22:28:47] [FAIL] EMA9 (107788.78270437501 → 107778.82409517781) cross_up oversold (30 → 30)
-[2025-06-09 22:28:47] [FAIL] EMA9 (107788.78270437501 → 107778.82409517781) cross_down overbought (70 → 70)
-[2025-06-09 22:29:48] [WARN] Warming up...
-[2025-06-09 22:29:48] [FAIL] RSI (50.75648911255355 → 50.08796762791281) cross_up oversold (30 → 30)
-[2025-06-09 22:29:48] [FAIL] RSI (50.75648911255355 → 50.08796762791281) cross_down overbought (70 → 70)
-[2025-06-09 22:30:50] [WARN] Warming up...
-[2025-06-09 22:30:50] [FAIL] RSI (50.7368205031059 → 50.0) cross_up oversold (30 → 30)
-[2025-06-09 22:30:50] [FAIL] RSI (50.7368205031059 → 50.0) cross_down overbought (70 → 70)
-[2025-06-09 22:31:51] [WARN] Warming up...
-[2025-06-09 22:31:51] [FAIL] RSI (50.61273097460712 → 50.0) cross_up oversold (30 → 30)
-[2025-06-09 22:31:51] [FAIL] RSI (50.61273097460712 → 50.0) cross_down overbought (70 → 70)
-[2025-06-09 22:32:53] [WARN] Warming up...
-[2025-06-09 22:32:53] [FAIL] RSI (50.57768774851807 → 50.0) cross_up oversold (30 → 30)
-[2025-06-09 22:32:53] [FAIL] RSI (50.57768774851807 → 50.0) cross_down overbought (70 → 70)
-[2025-06-09 22:33:54] [WARN] Warming up...
-[2025-06-09 22:33:54] [FAIL] RSI (50.246498103293334 → 50.0) cross_up oversold (30 → 30)
-[2025-06-09 22:33:54] [FAIL] RSI (50.246498103293334 → 50.0) cross_down overbought (70 → 70)
-[2025-06-09 22:34:56] [WARN] Warming up...
-[2025-06-09 22:34:56] [FAIL] RSI (50.24409138079746 → 49.9963639536911) cross_up oversold (30 → 30)
-[2025-06-09 22:34:56] [FAIL] RSI (50.24409138079746 → 49.9963639536911) cross_down overbought (70 → 70)
-[2025-06-09 22:35:56] [WARN] Warming up...
-[2025-06-09 22:35:56] [FAIL] RSI (50.241696215355425 → 50.00360106015232) cross_up oversold (30 → 30)
-[2025-06-09 22:35:56] [FAIL] RSI (50.241696215355425 → 50.00360106015232) cross_down overbought (70 → 70)
-[2025-06-09 22:36:58] [WARN] Warming up...
-[2025-06-09 22:36:58] [FAIL] RSI (50.06509901524244 → 50.00359221208441) cross_up oversold (30 → 30)
-[2025-06-09 22:36:58] [FAIL] RSI (50.06509901524244 → 50.00359221208441) cross_down overbought (70 → 70)
-[2025-06-09 22:37:59] [WARN] Warming up...
-[2025-06-09 22:37:59] [FAIL] RSI (50.34216028371871 → 50.0) cross_up oversold (30 → 30)
-[2025-06-09 22:38:00] [FAIL] RSI (50.34216028371871 → 50.0) cross_down overbought (70 → 70)
-[2025-06-09 22:39:01] [WARN] Warming up...
-[2025-06-09 22:39:01] [FAIL] RSI (50.337190966942686 → 50.00349640569516) cross_up oversold (30 → 30)
-[2025-06-09 22:39:01] [FAIL] RSI (50.337190966942686 → 50.00349640569516) cross_down overbought (70 → 70)
-[2025-06-09 22:40:02] [WARN] Warming up...
-[2025-06-09 22:40:02] [FAIL] RSI (50.89019548583014 → 50.0) cross_up oversold (30 → 30)
-[2025-06-09 22:40:02] [FAIL] RSI (50.89019548583014 → 50.0) cross_down overbought (70 → 70)
-[2025-06-09 22:41:03] [WARN] Warming up...
-[2025-06-09 22:41:03] [FAIL] RSI (50.0) < 50 => 50
-[2025-06-09 22:41:03] [FAIL] RSI (51.319048839302575 → 50.0) cross_down overbought (70 → 70)
-[2025-06-09 22:42:04] [WARN] Warming up...
-[2025-06-09 22:42:04] [FAIL] RSI (50.00304454782394) < 50 => 50
-[2025-06-09 22:42:04] [FAIL] RSI (51.25294121318398 → 50.00304454782394) cross_down overbought (70 → 70)
-[2025-06-09 22:51:40] [INFO] Auto Trade Enabled
-[2025-06-09 22:52:36] [WARN] Warming up...
-[2025-06-09 23:06:37] [WARN] Starting trading...
-[2025-06-09 23:06:37] [PASS] RSI (48.53388844122052) < 50 => 50
-[2025-06-09 23:06:39] [INFO] Rule matched: BTC Buy
-[2025-06-09 23:06:39] [INFO] Order result: {'orderId': 4499553281, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'IWRj0wxulDEDJGQ6YL4zoN', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.001', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1749485198791, 'tp_price': 111039.0, 'sl_price': 104570.7, 'order_scope': 'FUTURES', 'calculated_price': 107804.9, 'requested_size_usdt': 110.0, 'tp_percent': 3, 'sl_percent': 3}
-[2025-06-09 23:06:39] [FAIL] RSI (49.99884704960053 → 48.53388844122052) cross_down overbought (70 → 70)
-[2025-06-09 23:06:54] [INFO] Auto Trade Disabled
-[2025-06-09 23:08:33] [INFO] Auto Trade Enabled
-[2025-06-09 23:09:27] [WARN] Warming up...
-[2025-06-09 23:09:38] [INFO] Auto Trade Disabled
-[2025-06-10 22:39:32] [ERROR] Background update failed: (400, -1021, "Timestamp for this request was 1000ms ahead of the server's time.", {'Content-Type': 'application/json', 'Content-Length': '88', 'Connection': 'keep-alive', 'Date': 'Tue, 10 Jun 2025 15:39:31 GMT', 'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS', 'Server': 'Bengine', 'X-MBX-USED-WEIGHT-1M': '5', 'x-response-time': '2ms', 'Access-Control-Allow-Origin': '*', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 c5a76e805d061ce77b65fd84fe07dfe8.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BKK50-C1', 'X-Amz-Cf-Id': 'e57Gv-k8EaKGjalTTXUMr4LTmfaVwVjLmMYkzqCJlVhzPcDY0tWgCw=='}, None)
-[2025-06-10 22:40:33] [ERROR] Background update failed: (400, -1021, "Timestamp for this request was 1000ms ahead of the server's time.", {'Content-Type': 'application/json', 'Content-Length': '88', 'Connection': 'keep-alive', 'Date': 'Tue, 10 Jun 2025 15:40:31 GMT', 'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS', 'Server': 'Bengine', 'X-MBX-USED-WEIGHT-1M': '5', 'x-response-time': '2ms', 'Access-Control-Allow-Origin': '*', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 c5a76e805d061ce77b65fd84fe07dfe8.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'BKK50-C1', 'X-Amz-Cf-Id': 'lx222rWIo8SObW6tPThBs6EePMFd4kNZbe5ZJhNlUud8FVOt7HLJPw=='}, None)
-[2025-06-10 23:21:38] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:21:58] [ERROR] WebSocket stream disconnected: . Reconnecting in 10s...
-[2025-06-10 23:22:10] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:22:22] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:23:42] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:23:54] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:25:14] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:25:26] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:25:38] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:25:50] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:26:10] [ERROR] WebSocket stream disconnected: . Reconnecting in 10s...
-[2025-06-10 23:26:30] [ERROR] WebSocket stream disconnected: . Reconnecting in 10s...
-[2025-06-10 23:26:43] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:26:54] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:27:06] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:27:19] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:27:30] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:27:44] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:27:57] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:28:08] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:28:20] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:28:32] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:28:44] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:28:56] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:29:08] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:29:22] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:29:34] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:30:52] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:31:04] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:33:14] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:33:26] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:33:38] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:35:41] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:35:53] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:36:07] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:36:18] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:36:30] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:36:42] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:36:55] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:38:20] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:38:33] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:38:44] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
-[2025-06-10 23:39:04] [ERROR] WebSocket stream disconnected: . Reconnecting in 10s...
-[2025-06-10 23:39:17] [ERROR] Trade loop error: IndicatorCalculator.detect_candlestick_patterns() takes 1 positional argument but 2 were given. Restarting in 10s...
+[2025-06-20 21:54:45] [2025-02-25 00:00:00] EXIT SL @ 95641.06, PnL: -2.50% (Net: -2.75 USD)
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:45] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:46] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:46] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:47] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:47] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:48] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:48] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:48] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:48] [2025-03-03 11:00:00] BUY @ 92657.50 (TP 5%, SL 2.5%)
+[2025-06-20 21:54:48] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:48] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:48] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [2025-03-03 13:00:00] EXIT TP @ 97290.38, PnL: 5.00% (Net: 5.50 USD)
+[2025-06-20 21:54:48] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:48] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:48] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:48] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:48] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:48] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:48] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:48] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:48] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:48] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:48] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:48] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:49] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:49] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:49] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:50] [2025-03-05 19:00:00] BUY @ 89863.20 (TP 5%, SL 2.5%)
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [2025-03-05 20:00:00] EXIT TP @ 94356.36, PnL: 5.00% (Net: 5.50 USD)
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:50] [2025-03-05 21:00:00] BUY @ 112999.60 (TP 5%, SL 2.5%)
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [2025-03-06 01:00:00] EXIT SL @ 110174.61, PnL: -2.50% (Net: -2.75 USD)
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:50] [2025-03-06 04:00:00] BUY @ 100429.20 (TP 5%, SL 2.5%)
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [2025-03-06 05:00:00] EXIT TP @ 105450.66, PnL: 5.00% (Net: 5.50 USD)
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:50] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:50] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:50] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:51] [2025-03-06 16:00:00] BUY @ 97593.70 (TP 5%, SL 2.5%)
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:51] [2025-03-06 17:00:00] EXIT TP @ 102473.38, PnL: 5.00% (Net: 5.50 USD)
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:51] [2025-03-07 03:00:00] BUY @ 96740.00 (TP 5%, SL 2.5%)
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] EMA/EMA9 > EMA21
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [2025-03-07 09:00:00] EXIT SL @ 94321.50, PnL: -2.50% (Net: -2.75 USD)
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] EMA/EMA21 > EMA50
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:51] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] MACD/MACD cross_up signal
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value
+[2025-06-20 21:54:52] [PASS] RSI/RSI >= Manual Value

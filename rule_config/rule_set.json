@@ -1,36 +1,52 @@
 [
   {
-    "rule_name": "BTC Buy",
-    "active": false,
+    "rule_name": "Trend Pullback Buy",
+    "active": true,
     "description": "Test Long",
     "scope": "FUTURE",
     "trigger": "BUY",
     "symbol": "BTCUSDT",
     "size_usdt": "110",
     "logic": {
-      "indicator": "RSI",
-      "type": "RSI",
-      "operator": "<",
-      "value": 50
-    },
-    "tp": 3,
-    "sl": 3
-  },
-  {
-    "rule_name": "BTC Sell",
-    "active": false,
-    "description": "Test Short",
-    "scope": "FUTURE",
-    "trigger": "SELL",
-    "symbol": "BTCUSDT",
-    "size_usdt": "110",
-    "logic": {
-      "indicator": "RSI",
-      "type": "RSI",
-      "operator": "cross_down",
-      "compared": "overbought"
+      "type": "AND",
+      "conditions": [
+        {
+          "type": "AND",
+          "conditions": [
+            {
+              "type": "condition",
+              "indicator": "EMA",
+              "name": "EMA21",
+              "operator": ">",
+              "compared": "EMA50"
+            },
+            {
+              "type": "condition",
+              "indicator": "EMA",
+              "name": "EMA9",
+              "operator": ">",
+              "compared": "EMA21"
+            }
+          ]
+        },
+        {
+          "type": "condition",
+          "indicator": "RSI",
+          "name": "RSI",
+          "operator": ">=",
+          "compared": "Manual Value",
+          "value": "30"
+        },
+        {
+          "type": "condition",
+          "indicator": "MACD",
+          "name": "MACD",
+          "operator": "cross_up",
+          "compared": "signal"
+        }
+      ]
     },
     "tp": 5,
-    "sl": 5
+    "sl": 2.5
   }
 ]

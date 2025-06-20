@@ -427,19 +427,12 @@
   },
   {
     "scope": "FUTURE",
-    "balance_usdt": 14988.10612804,
+    "balance_usdt": 14787.29994345,
     "total_orders": 0,
     "wins": 0,
     "losses": 0,
     "winrate": 0.0,
     "total_pnl": 0.0,
-    "positions": {
-      "BTCUSDT": {
-        "positionAmt": 0.12,
-        "entryPrice": 106066.2033334,
-        "markPrice": 108998.17442029,
-        "unrealizedPnL": 351.837
-      }
-    }
+    "positions": {}
   }
 ]

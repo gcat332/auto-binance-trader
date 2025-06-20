@@ -388,7 +388,7 @@
   },
   {
     "active": true,
-    "rule_name": "AND: EMA9 cross_down EMA21 & PRICE < EMA9 (pass)",
+    "rule_name": "AND: EMA9 cross_down EMA21 & PRICE < EMA9 (fail)",
     "scope": "SPOT",
     "logic": {
       "type": "AND",

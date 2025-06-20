@@ -3,7 +3,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from functions.indicator import IndicatorCalculator
 from functions.rule_engine import RuleEngine
 from functions.binance_client import BinanceClient
+from functions.backtest_engine import run_backtest
 from functions.log_engine import LogTrade
+from datetime import datetime, timedelta
 import uvicorn
 import os, asyncio, json
 from pathlib import Path
@@ -43,6 +45,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+def seconds_until_next_hour():
+    now = datetime.now()
+    next_hour = (now + timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
+    return (next_hour - now).total_seconds()
 
 # --- REST API ---
 @app.get("/rules")
@@ -80,6 +86,21 @@ async def get_logs():
         return [line.strip() for line in lines if line.strip()]
     return []
 
+@app.post("/backtest")
+async def run_backtest_api(request: Request):
+    try:
+        data = await request.json()
+        rule = data.get("rule")
+        start = data.get("start")   # format: "YYYY-MM-DD HH:MM"
+        end = data.get("end")
+        if not start or not end:
+            return {"error": "Missing 'start' or 'end' parameter"}
+        result = run_backtest(rule, start, end,USER_CONFIG,INDICATOR_CONFIG,logger)
+        return result
+    except Exception as e:
+        logger.log_trade(f"[ERROR] Backtest API failed: {e}")
+        return {"error": str(e)}
+
 # --- Background Task ---
 
 def extract_kline_data(msg):
@@ -113,11 +134,9 @@ async def auto_trade_loop():
     while True:
         try:
             async for s_price, f_price in zip_price_streams():
-
                 if not auto_trade_enabled:
-                    await asyncio.sleep(60)
+                    await asyncio.sleep(seconds_until_next_hour())
                     continue
-
                 sindicators = ind.update(s_price)
                 findicators = ind.update(f_price)
                 price_count += 1
@@ -133,7 +152,7 @@ async def auto_trade_loop():
                         rule.check_create_order(sindicators, findicators)
                     except Exception as e:
                         logger.log_trade(f"[ERROR] Rule error: {e}")
-                await asyncio.sleep(60)
+                await asyncio.sleep(seconds_until_next_hour())
         except Exception as e:
             logger.log_trade(f"[ERROR] Trade loop error: {e}. Restarting in 10s...")
             await asyncio.sleep(10)

@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "date-fns": "^4.1.0",
     "lightweight-charts": "^4.2.3",
     "react": "^19.1.0",
+    "react-datepicker": "^8.4.0",
     "react-dom": "^19.1.0",
     "react-syntax-highlighter": "^15.6.1",
     "reactflow": "^11.11.4"
