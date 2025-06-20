@@ -33,6 +33,11 @@ Trading Bot สำหรับ Binance ที่มีทั้งฝั่ง B
 
 ---
 
+![image](https://github.com/user-attachments/assets/e1f59b5f-ac05-467f-b23d-99f0523d986b)
+![image](https://github.com/user-attachments/assets/2c727eb2-86c2-4782-9534-f6606ab551df)
+![image](https://github.com/user-attachments/assets/bad92055-35b0-4b7f-ae51-83c4ca386ebf)
+
+
 ## โครงสร้างโปรเจ็ค
 
 ```
